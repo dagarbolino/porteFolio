@@ -10,7 +10,6 @@
 a {
   color: #fff;
   text-decoration: none;
-
 }
 
 body {
@@ -24,7 +23,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   font-family: Dancing Script;
   font-weight: 300;
   font-style: 20px;
@@ -57,7 +55,6 @@ p {
 
 .nav-links {
   width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -79,19 +76,18 @@ main {
 }
 
 .banner {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+
   background-color: #333;
   color: #fff;
   gap: 10px;
+  height: 80px;
 }
 
 .profil {
-
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -108,7 +104,9 @@ main {
 }
 
 .profil_p {
-
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +116,7 @@ main {
   color: #fff;
   gap: 20px;
   margin-bottom: 20px;
-  margin-top: 20px;
+
 }
 
 .imgProfil {
@@ -129,7 +127,6 @@ main {
 }
 
 .stack {
-
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -165,7 +162,6 @@ main {
   flex-direction: column;
   background-color: #333;
   height: 70px;
-
 }
 
 .cards {
@@ -181,16 +177,12 @@ main {
   width: 100%;
 }
 
-
-
 .card {
   width: 300px;
   height: 250px;
   filter: grayscale();
   transition: filter 0.4s ease-in-out;
 }
-
-
 
 .card:hover {
   filter: none;
@@ -251,7 +243,6 @@ footer {
   font-size: 1.1rem;
 }
 
-
 .contact_p {
   display: flex;
   flex-direction: column;
@@ -280,7 +271,7 @@ button {
 
 @media screen and (min-width: 768px) {
 
-  /*header*/
+  /*---------------header---------------*/
   header {
     display: flex;
     flex-direction: row;
@@ -330,31 +321,38 @@ button {
     height: 40px;
   }
 
-  /*main*/
+  /*------------------main------------------*/
 
   .banner {
     height: 250px;
     padding: 0;
-
   }
 
-
   .profil_h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .banner p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-
 
   .profil {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 350px;
+    height: 425px;
+    margin: 0 auto;
 
+  }
+
+  .profil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: content-box;
   }
 
   .profil p {
@@ -362,7 +360,10 @@ button {
     flex-direction: row;
     justify-content: center;
     height: 350px;
-    width: 500px;
+    width: 600px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
   }
 
   .stack {
@@ -409,6 +410,7 @@ button {
     margin-top: 30px;
   }
 
+  /*------------footer-------------*/
   footer {
     height: 500px;
 
@@ -420,4 +422,3 @@ button {
   }
 
 }
-
