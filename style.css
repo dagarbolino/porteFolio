@@ -1,30 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   min-width: 320px;
-  max-width: 450px;
-  height: 100vh;
+  height: 100%;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Dancing Script;
+  font-weight: 300;
+  font-style: 20px;
 }
 
 .navbar {
+  width: 320px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   background-color: #333;
   color: #fff;
+  gap: 20px;
+  font-family: Dancing Script;
+}
+
+.title_h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 main {
@@ -32,77 +65,184 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding: 10px;
 }
 
 .banner {
+  width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
   gap: 10px;
 }
 
 .profil {
+  width: 320px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  gap: 20px;
+}
+
+.profil_h2 {
+  font-size: 2rem;
+}
+
+.profil_p {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.imgProfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .stack {
+  width: 320px;
+  height: 230px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.stack_h2 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.stack-icons {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
+  background-color: #333;
+
 }
 
 .project {
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
-  gap: 10px;
+  gap: 30px;
   background-color: #333;
   color: #fff;
 }
 
+.project_h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
 .card {
   width: 200px;
-  height: 200px;
-  border: 1px solid #fff;
+  height: 170px;
+  filter: grayscale();
+  transition: filter 0.4s ease-in-out;
+}
+
+.card:hover {
+  filter: none;
+}
+
+.card_h3 {
+  padding: 10px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  position: relative;
+}
+
+.card_h3::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card_h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.card_web_site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.imgCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 footer {
+  width: 320px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   background-color: #333;
   color: #fff;
+  font-size: 1.1rem;
 }
 
-.contact {
+
+.contact_p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  gap: 10px;
-  padding: 10px;
-  margin-top: 50px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
+  align-items: center;
+  width: 250px;
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 button {
-  padding: 10px;
+  padding: 8px;
   background-color: #333;
   color: #fff;
   border: 1px solid #fff;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;

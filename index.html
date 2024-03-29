@@ -4,82 +4,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <title>alexandre Dnk</title>
   <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Alexandre Dincq, web developer front-end">
+  <meta name="keywords" content="web developer, front-end, html, css, javascript, react, node, git, vscode">
+  <meta name="author" content="Alexandre Dincq">
+
+  <meta name="language" content="fr">
+
 </head>
 
 <body>
 
   <header>
     <Nav class="navbar">
+
       <div class="title">
-        <h1>Alexandre Dincq</h1>
+        <h1 class="title_h1">Alexandre Dincq</h1>
       </div>
 
       <div class="nav-links">
-        <button>Profile</button>
-        <button>Project</button>
-        <button>Contact</button>
+        <button><a href="#profile_stack">Profile</a></button>
+        <button><a href="#projects">Project</a></button>
+        <button><a href="#contact">Contact</a></button>
       </div>
+
     </Nav>
   </header>
 
-
   <main>
-    <div class="banner">
-      <h1>Web Developer</h1>
-      <p>Front-end and Back-end</p>
-    </div>
 
-    <div class="profil">
-      <img src=”” alt="img-moi">
-      <p style="width: 400px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est porro
-        fugiat numquam, provident vel repellat iure nulla quaerat labore,
-        molestias ut esse velit alias sit
-        fugit voluptatum error dignissimos?
-      </p>
-    </div>
-
-
-    <div class="stack">
-      <h2>Stack</h2>
-      <div class="stack-icons">
-        <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="html">
-        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="css">
-        <img src="https://img.icons8.com/color/48/000000/sass.png" alt="sass">
-        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="js">
-        <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="react">
-        <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="node">
-        <img src="https://img.icons8.com/color/48/000000/git.png" alt="git">
-        <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt="vscode">
+    <section id="profile_stack">
+      <div class="banner">
+        <h2 class="profil_h2">Web Developer</h2>
+        <p>Front-end</p>
       </div>
-    </div>
 
+      <div class="profil">
+        <img src="assets/images/profile-1.png" alt="img-moi" class="imgProfil">
+        <p class="profil_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est porro
+          fugiat numquam, provident vel repellat iure nulla quaerat labore,
+          molestias ut esse velit alias sit
+          fugit voluptatum error dignissimos?
+        </p>
+      </div>
 
-    <div class="project">
-      <h2>Projets</h2>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </div>
+      <div class="stack">
+        <h2 class="stack_h2">Stack</h2>
+        <div class="stack-icons">
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="html">
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="css">
+          <img src="https://img.icons8.com/color/48/000000/sass.png" alt="sass">
+          <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="js">
+          <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="react">
+          <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="node">
+          <img src="https://img.icons8.com/color/48/000000/git.png" alt="git">
+          <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt="vscode">
+        </div>
+      </div>
+    </section>
 
+    <section id="projects">
 
+      <div class="project">
+        <h2 class="project_h2">Projets</h2>
+        <div class="card">
+
+          <a class="card_web_site" href="#" alt="web site">
+            <img class="imgCard" src="./assets/images/projet-1.jpg" alt="">
+          </a>
+          <!-- <h3 class="card_h3">Cheese App</h3> -->
+        </div>
+
+        <div class="card">
+          <a class="card_web_site" href="#" alt="web site">
+            <img class="imgCard" src="./assets/images/projet-2.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="card_web_site" href="#" alt="web site">
+            <img class="imgCard" src="./assets/images/projet-3.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+    </section>
 
   </main>
+
   <footer>
-    <div class="contact">
-      <p>Vous avez un projet ?</p>
-      <p>Je serai ravi d'en
+
+    <div id="contact">
+      <h3 class="contact_p">Vous avez un projet ?</h3>
+      <h3 class="contact_p">Je serai ravi d'en
         <a href="mailto:dincq.alexandre@gmail.com">discuter</a>
-      </p>
-      <p>avec vous</p>
+      </h3>
+      <h3 class="contact_p">avec vous</h3>
     </div>
+
   </footer>
-
-
-
-
 
 </body>
 
